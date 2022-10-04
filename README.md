@@ -6,17 +6,17 @@
 
 ## Installation
 
-Download the `tft-thumbnail.py` and place it in your scripts folder. I use `~/bin` for this.
+Download the `tft-thumbnail.py` file and place it in your scripts folder. I use `~/bin` for this.
 
 You will also need to make sure you have python3 installed and configured. On my Mac that can be done at the command prompt with:
 
 `brew install python3`
 
-Then I would reccomend you can test this post processing script on a small G-code file to check you have all the required python libraries installed.
+Then I recommend you run this post processing script at the command prompt on a small G-code file to check that all the required python libraries are installed. For example:
 
 `python3 tft-thumbnail.py test.gcode test-sp.gcode`
 
-If you see any errors you can use `pip` to install any missing modules.
+If you see any errors you can use `pip` to install any missing modules. For example:
 
 `pip install regex`
 
@@ -24,7 +24,7 @@ If you see any errors you can use `pip` to install any missing modules.
 
 ## Prusa Slicer Setup
 
-You need to configure Prusa Slicer to output preview images (GCODE Thumbnails) and then run this a post processing script to convert them to a format compatible with the TFT35 display used by the Sapphire Pro/Plus 3D printers.
+You need to configure Prusa Slicer to output preview images (G-code Thumbnails) and then run this post processing script to convert them into a format compatible with the MKS Robin Nano TFT35 display used by the Sapphire Pro/Plus 3D printers.
 
 ![Printer Settings](images/printer-settings.jpg)
 
